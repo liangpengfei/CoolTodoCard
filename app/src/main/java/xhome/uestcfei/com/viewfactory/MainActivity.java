@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         MyItemAnimator animator = new MyItemAnimator(this);
         animator.setAddDuration(500);
         animator.setRemoveDuration(1000);
-        recyclerView.setItemAnimator(new DefaultItemAnimator()animator);
+        recyclerView.setItemAnimator(animator);
     }
 
 
