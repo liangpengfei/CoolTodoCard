@@ -4,6 +4,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
+import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -51,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         MyItemAnimator animator = new MyItemAnimator(this);
         animator.setAddDuration(500);
         animator.setRemoveDuration(1000);
-        recyclerView.setItemAnimator(animator);
+        recyclerView.setItemAnimator(new DefaultItemAnimator()animator);
     }
 
 
